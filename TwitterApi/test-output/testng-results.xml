@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8112" started-at="2019-10-14T12:59:54Z" finished-at="2019-10-14T13:00:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8112" started-at="2019-10-14T12:59:54Z" finished-at="2019-10-14T13:00:02Z">
+      <class name="Hashtag">
+        <test-method status="PASS" signature="hash()[pri:0, instance:Hashtag@737996a0]" name="hash" duration-ms="7269" started-at="2019-10-14T18:29:54Z" finished-at="2019-10-14T18:30:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hash -->
+        <test-method status="PASS" signature="searchTweet()[pri:0, instance:Hashtag@737996a0]" name="searchTweet" duration-ms="797" started-at="2019-10-14T18:30:01Z" finished-at="2019-10-14T18:30:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTweet -->
+      </class> <!-- Hashtag -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

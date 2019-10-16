@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="143182" started-at="2019-10-12T08:25:43Z" finished-at="2019-10-12T08:28:07Z">
+  <suite name="Default suite" duration-ms="118570" started-at="2019-10-15T09:15:14Z" finished-at="2019-10-15T09:17:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="143182" started-at="2019-10-12T08:25:43Z" finished-at="2019-10-12T08:28:07Z">
-      <class name="TourSearch">
-        <test-method status="PASS" signature="login1()[pri:0, instance:TourSearch@725bef66]" name="login1" duration-ms="142233" started-at="2019-10-12T13:55:44Z" finished-at="2019-10-12T13:58:06Z">
+    <test name="Default test" duration-ms="118570" started-at="2019-10-15T09:15:14Z" finished-at="2019-10-15T09:17:13Z">
+      <class name="HotelSearch">
+        <test-method status="PASS" signature="login1()[pri:0, instance:HotelSearch@725bef66]" name="login1" duration-ms="118543" started-at="2019-10-15T14:45:14Z" finished-at="2019-10-15T14:47:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login1 -->
-      </class> <!-- TourSearch -->
+      </class> <!-- HotelSearch -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

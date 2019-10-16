@@ -25,7 +25,7 @@ import org.openqa.selenium.TakesScreenshot;
           By HotelSearchField=By.xpath("//div[@id='s2id_location']//a[@class='select2-choice select2-default']");
           By TextFromSearchDropdown=By.xpath("//div[contains(text(),'galore, India')]");
           By checkin=By.xpath("//div[@id='dpd1']//input[@placeholder='Check in']");
-          By next=By.xpath("//div[14]//div[1]//tr[1]//th[3]");
+         // By next=By.xpath("//div[14]//div[1]//tr[1]//th[3]");
           By checkout=By.xpath("//input[@placeholder='Check out']");
 		  By Guest=By.xpath("//input[@id='htravellersInput']");
 		  By Adult=By.xpath("//input[@id='hadultInput']");
@@ -63,7 +63,6 @@ import org.openqa.selenium.TakesScreenshot;
         	  driver.findElement(HotelSearchField).click();
         	  driver.findElement(HotelSearchField).sendKeys(prop.getProperty("cityname"));
         	  driver.findElement(HotelSearchField).sendKeys(Keys.DOWN);
-        	  
         	  driver.findElement(TextFromSearchDropdown).click();
         	  
        //checkin 	  
@@ -80,7 +79,7 @@ import org.openqa.selenium.TakesScreenshot;
          	 }
          	 else
          	 {
-         		 driver.findElement(next).click();
+         		 driver.findElement(By.xpath("//input[@placeholder='Check out']")).click();
          		 
          	 }
          }
