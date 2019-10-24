@@ -6,18 +6,21 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 
-public class Create extends Search {
+public class Create {
+	String consumerkey="2Xtd4ILUtinfACHehAvCNcbjW";
+	String consumerSecret="pIHDmJy9fgKlLVuAgG4AuP5rRkaOy6TtWqxLqjVeJ2MywdcGJp";
+	String Token="839104214-h1Kaf8iJW2FAyXzNCZNicI1a4Xb8BMw7ZkFKGzmJ";
+	String TokenSecret="PTvXawkmrK3EZWeLSSmqtD7hisogRC3nqG48FYzNcLfQy";
 	
-	  
-	 @Test
+	   @Test
 	 public void Create1() throws Exception {
 		RestAssured.baseURI="https://api.twitter.com/1.1/statuses/";
-		Response res=given().auth().oauth(prop.getProperty("consumerkey"), prop.getProperty("consumerSecret"),prop.getProperty("Token"), prop.getProperty("TokenSecret")).
-		queryParam("status","I am learning API testing using RestAssured    Java1  #Qualitest")
+		Response res=given().auth().oauth(consumerkey, consumerSecret, Token, TokenSecret).
+		queryParam("status","I am learning         API testing      using RestAssured    Java1      #Qualitest")
 		.when().post("/update.json").then().extract().response();
 				
 		String response=res.asString();                 
-		System.out.println(response);
+		//System.out.println(response);
 		JsonPath js=new JsonPath(response);                
 		String id=js.get("id").toString();
 		System.out.println(id);
